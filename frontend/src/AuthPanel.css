@@ -1,0 +1,362 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  transition: background 0.3s ease-in-out;
+}
+
+.statue-image {
+  flex: 1;
+  background: url("C:/Users/melvi/frontend/frontend/src/assets/Bg.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 100%;
+  text-align: center;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 8px rgb(0, 0, 0);
+  transition: color 0.3s ease-in-out;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: darkgreen;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Login input, .Register input {
+  margin-bottom: 1rem;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 40px;
+  width: 50%;
+  margin: 5px auto;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Login input:focus, .Register input:focus {
+  border: 1px solid green;
+  box-shadow: 0 0 6px rgba(49, 41, 60, 0.3);
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0;
+  color: rgb(1, 127, 1); 
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out, transform 0.2s;
+}
+
+.nav-button:hover { 
+  text-shadow: 2px 2px 10px rgba(49, 60, 0.3);
+  transform: scale(1.1);
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out, transform 0.2s;
+}
+
+.login-button, .register-button {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: green;
+  color: #fff;
+  border: 1px solid green;
+  height: 40px;
+  width: 30%;
+  margin: 10px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.login-button:hover, .register-button:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0;
+  color: rgb(1, 127, 1); 
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out, transform 0.2s;
+}
+
+.toggle-button:hover {
+  text-shadow: 2px 2px 10px rgba(49, 60, 0.3);
+  transform: scale(1.1);  
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out, transform 0.2s;
+}
+
+.Login a, .Register a { 
+  color: rgb(76, 75, 75);
+  display: flex;
+  padding: 15px 10px;
+  margin-left: 25%;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.line {
+  border: none;
+  border-top: 2px solid rgb(12, 117, 9);
+  margin: 20px 0;
+  width: 100%;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.reset-password-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 50px auto;
+  font-family: "Arial", sans-serif;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.reset-password-container h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.reset-password-form input {
+  margin: 10px auto;
+  padding: 12px 15px;
+  width: 50%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.reset-password-form button {
+  padding: 12px 25px;
+  width: 30%;
+  margin: 10px auto;
+  background-color: rgb(12, 117, 9);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.reset-password-form button:hover {
+  background-color: green;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .Login a, .Register a {
+    margin-left: 20%;
+  }
+
+  .Login a, .Register a, .Login p, .form-container p { 
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  .reset-password-form a {
+    font-weight: bold;
+    color: #1b5803;
+    text-shadow: 2px 1px 10px #ffffff;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+    color: #0def09;
+    text-shadow: 1px 1px 10px #000000;
+  }
+
+  .statue-image {
+    flex: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .right-panel {
+    background: rgba(255, 255, 255, 0);
+    flex: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .form-container input {
+    width: 60%;
+  }
+
+  .footer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .login-button, .register-button {
+    font-size: 0.8rem;
+  }
+  
+}
+
+.footer {
+  position: fixed;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%); 
+  background-color: transparent;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+
+}
+
+.footer p {
+  margin: 0;
+}
+
+.centered-header {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%); 
+  text-align: center;
+  font-size: 1rem;
+  color:  rgb(0, 0, 0);
+  font-weight: bold;
+  z-index: 10;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .centered-header {
+
+    font-size: 0.9rem;
+    left: 55%;
+  }
+}
+
+@media (max-width: 480px) {
+  .centered-header {
+    top: 5px;
+    font-size: 0.6rem;
+    left: 55%;
+  }
+
+  .footer {
+    height: 35px;
+    width: 100%;
+  }
+
+  .reset-password-form button {
+    width: 60%;
+  }
+
+  .reset-password-form input {
+    width: 80%;
+  }
+
+  .form-container input {
+    width: 70%;
+  }
+
+  .form-container button {
+    width: 50%;
+  }
+
+  .Login a, .Register a {
+    margin-left: 10%;
+  }
+}
+
+
+

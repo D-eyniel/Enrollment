@@ -1,6 +1,7 @@
 import React from 'react';
-import AuthPanel from './AuthPanel';
-import Dashboard from './Dashboard';
+import AuthPanel from './Login/AuthPanel';
+import Dashboard from './Login/Dashboard';
+import Admin from './Admin/AdminDashboard';
 
 
 function App() {

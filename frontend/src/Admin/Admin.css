@@ -1,0 +1,190 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Use a more modern font */
+  background-color: #f4f5f7; /* Light background for the whole page */
+  width: 100vw;
+}
+
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  margin-top: 1%;
+  margin-left: 1%;
+  width: 250px;
+  background-color: #2b3e50; /* Slightly muted color for elegance */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-right: 1px solid #dcdcdc; /* Divider for the sidebar */
+}
+
+.sidebar .logo img {
+  width: 200px; /* Slightly larger logo */
+  margin-bottom: 20px;
+  border-radius: 8px; /* Rounded corners for logo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow around logo */
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sidebar nav ul li {
+  padding: 15px;
+  margin: 5px 0;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  border-radius: 8px; /* Rounded corners for buttons */
+}
+
+.sidebar nav ul li.active {
+  background-color: #038130; /* Bright accent for active menu */
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(26, 188, 156, 0.3); /* Highlight shadow */
+}
+
+.sidebar nav ul li:hover {
+  background-color: #139939; /* Softer hover effect */
+}
+
+.sidebar .logout {
+  margin-top: auto;
+  padding: 10px 15px;
+  background-color: #e74c3c;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.sidebar .logout:hover {
+  background-color: #c0392b;
+  box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f5f7;
+}
+
+/* Panel */
+.panel {
+  padding: 25px;
+  background-color: #ffffff; /* White panel background */
+  margin: 20px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Elevation effect */
+  width: 90%; /* Same width as header */
+}
+
+/* Search bar inside the panel */
+.panel .search-bar {
+  margin-top: 20px; /* Add margin to separate from the title */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.panel .search-bar input {
+  padding: 10px 15px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 400px; /* Search bar width adjustment */
+  border: 1px solid #dcdcdc;
+  border-radius: 20px; /* Rounded input */
+  transition: border-color 0.3s ease;
+}
+
+.panel .search-bar input:focus {
+  outline: none;
+  border-color: #1abc9c;
+  box-shadow: 0 0 8px rgba(26, 188, 156, 0.3);
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: #2c3e50; /* Darker heading */
+}
+
+.panel p {
+  color: #7f8c8d; /* Subtle text color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .header {
+    width: 200px;
+  }
+
+  .panel {
+    margin: 10px;
+  }
+}
+
+
+.panel .search-bar {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .panel .search-bar input {
+    padding: 10px 15px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px; 
+    transition: border-color 0.3s ease;
+  }
+  
+  .panel .search-bar input:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 0 8px rgba(26, 188, 156, 0.3);
+  }
+  
+  .panel .filter-dropdown {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    background-color: white;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .panel .filter-dropdown:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 0 8px rgba(26, 188, 156, 0.3);
+  }
+  
+  
+  

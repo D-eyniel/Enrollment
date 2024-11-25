@@ -11,14 +11,6 @@ body {
   transition: background 0.3s ease-in-out;
 }
 
-.statue-image {
-  flex: 1;
-  background: url("C:/Users/melvi/frontend/frontend/src/assets/Bg.jpg") no-repeat center center;
-  background-size: cover;
-  position: relative;
-  transition: opacity 0.5s ease-in-out;
-}
-
 .right-panel {
   flex: 1;
   display: flex;
@@ -27,6 +19,14 @@ body {
   background-color: #fff;
   padding: 20px;
   transition: background-color 0.3s ease-in-out;
+}
+
+.statue-image {
+  flex: 1;
+  background: url("C:/Users/melvi/frontend/frontend/src/assets/Bg.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .form-container {
@@ -203,7 +203,7 @@ form {
 
 .reset-password-form button {
   padding: 12px 25px;
-  width: 30%;
+  width: 50%;
   margin: 10px auto;
   background-color: rgb(12, 117, 9);
   color: white;
@@ -223,55 +223,40 @@ form {
 
 @media (max-width: 768px) {
   .login-container {
+    background: url("C:/Users/melvi/frontend/frontend/src/assets/Bg.jpg") no-repeat center center;
+    background-size: cover;
     flex-direction: column;
   }
 
-  .Login a, .Register a {
-    margin-left: 20%;
-  }
-
-  .Login a, .Register a, .Login p, .form-container p { 
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-  }
-
-  .reset-password-form a {
-    font-weight: bold;
-    color: #1b5803;
-    text-shadow: 2px 1px 10px #ffffff;
-  }
-
-  .nav-button {
-    font-size: 1rem;
-    color: #0def09;
-    text-shadow: 1px 1px 10px #000000;
-  }
-
   .statue-image {
-    flex: none;
-    height: 100%;
-    position: fixed;
-    width: 100%;
-    z-index: -1;
+    display: none;
   }
 
   .right-panel {
-    background: rgba(255, 255, 255, 0);
+    background: url("C:/Users/melvi/frontend/frontend/src/assets/Bg.jpg") no-repeat center center;
+    background-size: cover;
     flex: none;
     width: 100%;
     height: 100%;
   }
 
-  h1 {
-    font-size: 1.6rem;
+  .centered-header {
+    font-size: 0.9rem;
+    margin-left: 4%;
   }
 
-  .form-container input {
-    width: 60%;
+  .form-container a {
+    font-weight: bold;
+    color: black;
   }
 
-  .footer {
-    width: 80%;
+  .nav-button {
+    font-weight: bold;
+    text-shadow: rgb(29, 90, 30)  2px 2px 5px;
+  }
+
+  .footer p{
+    width: 100%;
   }
 }
 
@@ -290,6 +275,7 @@ form {
   position: fixed;
   bottom: 1px;
   left: 50%;
+  width: 100%;
   transform: translateX(-50%); 
   background-color: transparent;
   padding: 10px 20px;
@@ -297,7 +283,6 @@ form {
   border-radius: 5px;
   font-size: 14px;
   color: #333;
-
 }
 
 .footer p {
@@ -314,49 +299,6 @@ form {
   color:  rgb(0, 0, 0);
   font-weight: bold;
   z-index: 10;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
-
-@media (max-width: 768px) {
-  .centered-header {
-
-    font-size: 0.9rem;
-    left: 55%;
-  }
-}
-
-@media (max-width: 480px) {
-  .centered-header {
-    top: 5px;
-    font-size: 0.6rem;
-    left: 55%;
-  }
-
-  .footer {
-    height: 35px;
-    width: 100%;
-  }
-
-  .reset-password-form button {
-    width: 60%;
-  }
-
-  .reset-password-form input {
-    width: 80%;
-  }
-
-  .form-container input {
-    width: 70%;
-  }
-
-  .form-container button {
-    width: 50%;
-  }
-
-  .Login a, .Register a {
-    margin-left: 10%;
-  }
-}
-
-
 
